@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MindfullnessBreathingGame"
+    android:background="@drawable/background">
+
+
+    <ImageButton
+        android:id="@+id/exit_button_breathing"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/exit_button_breathing" />
+
+    <TextView
+        android:id="@+id/breath_count_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:text="BreathCount"
+        android:textColor="#FFFFFF"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exit_button_breathing" />
+
+    <ImageView
+        android:id="@+id/butterfly_image_breathinggame"
+        android:layout_width="255dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breath_count_tv"
+        app:srcCompat="@drawable/butterfly_breathing" />
+
+    <TextView
+        android:id="@+id/remaining_time_breathing_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Remaning Time"
+        android:textColor="#989898"
+        android:textSize="9pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/butterfly_image_breathinggame" />
+
+    <TextView
+        android:id="@+id/desc_to_breathinggame_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:gravity="center_horizontal"
+        android:text="Press and hold as \n you breath in"
+        android:textColor="#989898"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remaining_time_breathing_tv" />
+
+    <ImageView
+        android:id="@+id/breathing_inhale_button"
+        android:layout_width="179dp"
+        android:layout_height="152dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desc_to_breathinggame_tv"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/breathing_button" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AORORA</string>
+    <string name="tap_to_return"> TAP T0\n CHANGE PROFILE</string>
+    <string name="quest_notification"><font fgcolor='#CCCC00'>QUEST NOTIFICATION !</font> \n <font fgcolor='#FFFFFF'>TRY MINDFULLNESS BREATHING</font></string>
+    <string name="already_have_an_account">Already have an account? <font fgcolor='#01C6DB'>Login</font></string>
+
+    <string-array name="breathing_menu_selection">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="meditation_menu_selection">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+    </string-array>
+
+</resources>

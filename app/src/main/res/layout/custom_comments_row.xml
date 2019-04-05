@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000">
+
+        <ImageView
+            android:id="@+id/coverImage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/user_sent_notification_tv"
+            style="@style/Base.Animation.AppCompat.DropDownUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/coverImage"
+            android:lines="1"
+            android:text="FancyNancy33"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/notification_content_tv"
+            style="@style/Base.Animation.AppCompat.DropDownUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/coverImage"
+            android:lines="2"
+            android:layout_below="@id/user_sent_notification_tv"
+            android:text="Notifications will pop up here"
+            android:textColor="#989898"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
